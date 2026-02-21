@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #0f1115;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 30px;
+  background-color: #1c1e24;
+  height: 60px;
+  border-bottom: 1px solid #2a2d36;
+}
+
+.logo {
+  flex: 1; 
+  display: flex;
+  align-items: center;
+  color: #ff4655;
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 1px;
+  flex-basis: 0;
+  white-space: nowrap;
+}
+
+.logo .icon {
+  color: #ff4655;
+  margin-right: 8px;
+}
+
+.logo .brand {
+  color: #ff3c3c;
+}
+
+.cabecalho-elementos {
+  flex: 1; 
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  height: 100%;
+  align-items: center;
+  flex-basis: 0;
+}
+
+.cabecalho-elementos-items {
+  color: #8a8e99; 
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  height: 100%;
+  display: flex;
+  padding: 0 10px;
+  transition: 0.2s;
+  border-bottom: 3px solid transparent;
+  align-items: center;
+}
+
+.cabecalho-elementos-items:hover {
+  color: #fff;
+}
+
+.cabecalho-elementos-items.active {
+  color: white;
+  border-bottom-color: #ff3c3c;
+}
+
+.login {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 0;
+}
+
+.cabecalho-elementos-items-login {
+  background: #2a2d36;
+  padding: 6px 20px;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: 0.2s;
+  font-weight: 400;
+  border: none;
+  gap: 10px;
+}
+
+.cabecalho-elementos-items-login:hover {
+  background: #334155;
+}
+
+.cabecalho-elementos-items:hover {
+  color: #fff;
+}
+
+.logo-pokebola {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.logo-pokebola-item {
+  width: 200px;
+}
+
+.secao-top {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 60px 20px;
+  gap: 100px; 
+  background: linear-gradient(90deg, #0f1115, #0c0f13);
+  width: 100%;
+}
+
+.bloco-discord {
+  display: flex;
+  align-items: center;
+  margin-right: 0; 
+  gap: 20px;
+  margin-left: 300px; 
+}
+
+.icone-menor-discord {  
+  margin-top: -20px;
+}
+
+.titulo-discord {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.subtitulo-discord {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+}
+
+.logo-discord {
+  width: 100px;
+}
+
+.bloco-download {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 0; 
+}
+
+.titulo-download {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.botao-download {
+  width: 300px;
+  color: #fff;
+  border: none;
+  background-color: #ff4655;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.botao-download:hover {
+  background-color: #a00000;
+  transform: translateY(-3px);
+}
+
+.bloco-aplicativo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imagem-aplicativo {
+  display: block;
+  margin: 0 auto;
+  width: 90%; 
+  max-width: 1200px; 
+  height: auto;
+  margin-bottom: 20px;
+  border: 4px solid #1c1e24;
+  border-radius: 8px;
+}
+
+.texto-aplicativo {
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.subtitulo-aplicativo {
+  font-weight: 200px;
+  padding-bottom: 30px;
+}
+
+.rodape {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+  text-align: left; 
+  padding: 40px 20px; 
+  gap: 20px;
+  background-color: #1c1e24;
+}
+
+.rodape-suporte,
+.redes-sociais,
+.about {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px; 
+  max-width: 300px; 
+}
+
+.titulo-suporte {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.subtitulo-suporte {
+  font-size: 20px;
+}
+
+.redes-sociais {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.redes-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.redes-items-uniredes {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff
+}
+
+.redes-items-uni {
+  text-decoration: none;
+  color: #fff
+
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titulo-about {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.texto-about {
+  font-size: 15px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); 
+  backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #1c1e24;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.botao-fechar {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  color: #8a8e99;
+  cursor: pointer;
+}
+
+.modal-logo {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.modal-titulo {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.modal-botoes {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-opcap {
+  font-size: 15px;
+  background-color: #ff4655;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.btn-opcap:hover {
+  transform: scale(1.05);
+  background-color: #a00000;
+}
+
+@media (max-width: 768px) {
+  .cabecalho {
+    padding: 0 15px;
+  }
+  
+  .cabecalho-elementos {
+    gap: 10px;
+  }
+
+  .logo .brand {
+    display: none; 
+  }
+
+  .secao-top {
+    flex-direction: column;
+  }
+
+  .botao-download {
+    width: 100%; 
+    max-width: 300px;
+  }
+
+  .subtitulo-discord {
+    justify-content: center;
+  }
+
+  .texto-aplicativo {
+    font-size: 22px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .rodape {
+    flex-direction: column; /* Alinha as colunas verticalmente */
+    text-align: center; /* Centraliza o texto */
+    align-items: center; /* Centraliza as colunas */
+  }
+
+  .rodape-suporte,
+  .redes-sociais,
+  .about {
+    align-items: center; /* Centraliza os itens dentro de cada coluna */
+    text-align: center; /* Centraliza o texto dentro de cada coluna */
+    max-width: 100%; /* Remove o limite de largura */
+  }
+
+  .rodape {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .texto-about {
+    max-width: 100%;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 30px 20px;
+  }
+}
